@@ -36,6 +36,7 @@
 		8E51798C295F7DFE00C2B5C2 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E51798B295F7DFE00C2B5C2 /* Extensions.swift */; };
 		8E51798E295FA6AF00C2B5C2 /* RMCharacterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E51798D295FA6AF00C2B5C2 /* RMCharacterCollectionViewCell.swift */; };
 		8E517990295FA7C600C2B5C2 /* RMCharacterCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E51798F295FA7C600C2B5C2 /* RMCharacterCollectionViewCellViewModel.swift */; };
+		8EF4BC7D296C796800706235 /* RMImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF4BC7C296C796800706235 /* RMImageManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		8E51798B295F7DFE00C2B5C2 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		8E51798D295FA6AF00C2B5C2 /* RMCharacterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharacterCollectionViewCell.swift; sourceTree = "<group>"; };
 		8E51798F295FA7C600C2B5C2 /* RMCharacterCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharacterCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
+		8EF4BC7C296C796800706235 /* RMImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMImageManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +178,7 @@
 		8E3FE0A5295CCEA4001987F8 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				8EF4BC7C296C796800706235 /* RMImageManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 				8E51797A295DEBC600C2B5C2 /* RMEndpoint.swift in Sources */,
 				8E51796E295CFC0B00C2B5C2 /* RMCharacterViewController.swift in Sources */,
 				8E517990295FA7C600C2B5C2 /* RMCharacterCollectionViewCellViewModel.swift in Sources */,
+				8EF4BC7D296C796800706235 /* RMImageManager.swift in Sources */,
 				8E517978295DEB5900C2B5C2 /* RMRequest.swift in Sources */,
 				8E517988295F73EC00C2B5C2 /* RMCharacterListViewViewModel.swift in Sources */,
 				8E517970295CFC1C00C2B5C2 /* RMEpisodeViewController.swift in Sources */,
