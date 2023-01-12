@@ -95,8 +95,6 @@ final class RMCharacterListViewViewModel: NSObject  {
                 })
                 strongSelf.characters.append(contentsOf: moreResults)
                 
-                print(String(strongSelf.characters.count))
-                
                 DispatchQueue.main.async {
                     strongSelf.delegate?.didLoadMoreCharacters(
                         with: indexPathsToAdd
