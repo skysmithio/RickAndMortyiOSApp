@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class CharacterListViewViewModel: NSObject {
+final class RMCharacterListViewViewModel: NSObject {
     func fetchCharacters() {
         RMService.shared.execute(
             .listCharactersRequest,
@@ -15,8 +15,7 @@ final class CharacterListViewViewModel: NSObject {
         ) { result in
             switch result {
             case .success(let model):
-                print("Total: \(model.info.pages)")
-                print("Page result count: \(model.results.count)")
+                print("Example image url: \(model.results.first?.image ?? "NONE")")
             case .failure(let error):
                 print(String(describing: error))
             }
@@ -24,14 +23,25 @@ final class CharacterListViewViewModel: NSObject {
     }
 }
 
-extension CharacterListViewViewModel: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+extension RMCharacterListViewViewModel: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 20
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
-        cell.backgroundColor = .systemGreen
+        guard let cell = collectionView.dequeueReusableCell(
+            withReuseIdentifier: RMCharacterCollectionViewCell.cellIdenitifer,
+            for: indexPath
+        ) as? RMCharacterCollectionViewCell else {
+            fatalError("Unsupported cell")
+        }
+        let viewModel = RMCharacterCollectionViewCellViewModel(
+            characterName: "Steve",
+            characterStatus: .alive,
+            characterImageUrl: URL(string: "https://rickandmortyapi.com/api/character/avatar/1.jpeg")
+        )
+        cell.configure(with: viewModel)
+        
         return cell
     }
     

@@ -8,8 +8,8 @@
 import SwiftUI
 
 /// View that handles showing list of characters, loader, etc.
-final class CharacterListView: UIView {
-    private let viewModel = CharacterListViewViewModel()
+final class RMCharacterListView: UIView {
+    private let viewModel = RMCharacterListViewViewModel()
     
     private let spinner: UIActivityIndicatorView = {
         let spinner = UIActivityIndicatorView(style: .large)
@@ -35,8 +35,8 @@ final class CharacterListView: UIView {
         collectionView.alpha = 0
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.register(
-            UICollectionViewCell.self,
-            forCellWithReuseIdentifier: "cell"
+            RMCharacterCollectionViewCell.self,
+            forCellWithReuseIdentifier: RMCharacterCollectionViewCell.cellIdenitifer
         )
         return collectionView
     }()
@@ -44,7 +44,7 @@ final class CharacterListView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         translatesAutoresizingMaskIntoConstraints = false
-        backgroundColor = .systemBlue
+        backgroundColor = .secondarySystemBackground
         addSubviews(collectionView, spinner)
         addConstraints()
         spinner.startAnimating()
