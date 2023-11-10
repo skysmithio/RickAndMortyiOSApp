@@ -8,13 +8,27 @@
 import Foundation
 
 final class RMCharacterDetailViewViewModel {
-    private let charater: RMCharacter
+    private let character: RMCharacter
+    
+    enum SectionType: CaseIterable {
+        case photo
+        case information
+        case episodes
+    }
+    
+    public let sections = SectionType.allCases
+    
+    // MARK: - Init
     
     init(character: RMCharacter) {
-        self.charater = character
+        self.character = character
+    }
+    
+    public var requestUrl: URL? {
+        return URL(string: character.url)
     }
     
     public var title: String {
-        charater.name.uppercased()
+        character.name.uppercased()
     }
 }
