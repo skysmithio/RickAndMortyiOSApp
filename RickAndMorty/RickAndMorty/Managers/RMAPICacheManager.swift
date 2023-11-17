@@ -29,7 +29,6 @@ final class RMAPICacheManager {
               let url = url else {
             return nil
         }
-        print("Using cached API response")
         let key = url.absoluteString as NSString
         return targetCache.object(forKey: key) as? Data
     }

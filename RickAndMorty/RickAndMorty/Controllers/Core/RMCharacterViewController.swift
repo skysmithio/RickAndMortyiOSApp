@@ -16,7 +16,7 @@ final class RMCharacterViewController: UIViewController, RMCharacterListViewDele
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
         title = "Characters"
-        setUpView()
+        setUpView() 
         addSearchButton()
     }
     
