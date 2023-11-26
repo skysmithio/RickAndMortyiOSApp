@@ -63,6 +63,7 @@ class RMLocationDetailViewController: UIViewController, RMLocationDetailViewView
     }
     
     // MARK: - View Delegate
+    
     func rmEpisodeDetailView(
         _ detailView: RMLocationDetailView,
         didSelect character: RMCharacter
