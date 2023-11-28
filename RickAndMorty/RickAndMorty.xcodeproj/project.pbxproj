@@ -60,6 +60,7 @@
 		8EB65D9B2AEBFB2C00F4F10C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB65D9A2AEBFB2C00F4F10C /* Extensions.swift */; };
 		8EB65D9D2AEDCC2100F4F10C /* RMCharacterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB65D9C2AEDCC2100F4F10C /* RMCharacterCollectionViewCell.swift */; };
 		8EB65D9F2AEDCD0100F4F10C /* RMCharacterCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB65D9E2AEDCD0100F4F10C /* RMCharacterCollectionViewCellViewModel.swift */; };
+		8ED3D2E22B163D08002C8896 /* RMSearchOptionPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED3D2E12B163D08002C8896 /* RMSearchOptionPickerViewController.swift */; };
 		8ED533CC2AF3F3030084FBE3 /* RMCharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED533CB2AF3F3030084FBE3 /* RMCharacterDetailViewController.swift */; };
 		8ED533CE2AF3F3AB0084FBE3 /* RMCharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED533CD2AF3F3AB0084FBE3 /* RMCharacterDetailView.swift */; };
 		8ED533D02AF3F3B60084FBE3 /* RMCharacterDetailViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED533CF2AF3F3B60084FBE3 /* RMCharacterDetailViewViewModel.swift */; };
@@ -129,6 +130,7 @@
 		8EB65D9A2AEBFB2C00F4F10C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		8EB65D9C2AEDCC2100F4F10C /* RMCharacterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharacterCollectionViewCell.swift; sourceTree = "<group>"; };
 		8EB65D9E2AEDCD0100F4F10C /* RMCharacterCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharacterCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
+		8ED3D2E12B163D08002C8896 /* RMSearchOptionPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMSearchOptionPickerViewController.swift; sourceTree = "<group>"; };
 		8ED533CB2AF3F3030084FBE3 /* RMCharacterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharacterDetailViewController.swift; sourceTree = "<group>"; };
 		8ED533CD2AF3F3AB0084FBE3 /* RMCharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharacterDetailView.swift; sourceTree = "<group>"; };
 		8ED533CF2AF3F3B60084FBE3 /* RMCharacterDetailViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharacterDetailViewViewModel.swift; sourceTree = "<group>"; };
@@ -399,12 +401,21 @@
 			path = APIResponseTypes;
 			sourceTree = "<group>";
 		};
+		8ED3D2E32B163DA0002C8896 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				8E8BDEDA2B029D81004E0042 /* RMSearchViewController.swift */,
+				8ED3D2E12B163D08002C8896 /* RMSearchOptionPickerViewController.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
 		8ED533CA2AF3F2B00084FBE3 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				8ED3D2E32B163DA0002C8896 /* Search */,
 				8ED533CB2AF3F3030084FBE3 /* RMCharacterDetailViewController.swift */,
 				8EFF3A9F2B01C67000A21682 /* RMEpisodeDetailViewController.swift */,
-				8E8BDEDA2B029D81004E0042 /* RMSearchViewController.swift */,
 				8E4F9D532B07C0AC00C10429 /* RMLocationDetailViewController.swift */,
 			);
 			path = Other;
@@ -557,6 +568,7 @@
 				8EB65D892AEACBBD00F4F10C /* RMEndpoint.swift in Sources */,
 				8EFF3AA02B01C67000A21682 /* RMEpisodeDetailViewController.swift in Sources */,
 				8E4F9D572B07C25B00C10429 /* RMLocationDetailView.swift in Sources */,
+				8ED3D2E22B163D08002C8896 /* RMSearchOptionPickerViewController.swift in Sources */,
 				8E69536F2B067255003D9C66 /* RMLocationTableViewCellViewModel.swift in Sources */,
 				8E8BDED22B0262D3004E0042 /* RMEpisodeDetailView.swift in Sources */,
 				8EB65D782AEABEED00F4F10C /* RMCharacter.swift in Sources */,
